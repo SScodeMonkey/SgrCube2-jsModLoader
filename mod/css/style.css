@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+/*HOTKEY TAGS*/
+.hotkey_tag {
+	font-size:		9px,
+	font-weigth:	normal,
+	color:			white,
+	z-index:		2,
+	margin:			0,
+	padding:		1,
+	background:		rgba(0, 0, 0, 0.6),
+	border-radius:	10%,
+	width:			12,
+	
+	position: 		absolute,
+}
+
+/*SCROLLBAR (vertical only)*/ 
+.customScroll1::-webkit-scrollbar {
+    width: 4px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.customScroll1::-webkit-scrollbar-thumb {
+    min-height: 6px;
+    width: 		2px;
+    background: rgba(200, 170, 100, 1);
+}
+
+/*MODIFIER CLASSES*/
+.disabled {
+    opacity: 0.5;
+}
+
+/*SHARED CODE*/
