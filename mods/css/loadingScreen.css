@@ -1,0 +1,103 @@
+/*LOADING SCREEN*/
+#loadingScreen {
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 20, 40, 0.98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #loadingScreen > div {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 20px solid rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font: 28px "Century Gothic", Cambria;
+        color: rgba(200, 170, 100, 0.7);
+        position: relative;
+    }
+
+    #loadingScreen #bar1 {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 20px solid transparent;
+        border-left: 20px solid rgba(200, 170, 100, 0.5);
+        animation: rotate1 1.25s 0.25s infinite alternate linear;
+    }
+
+    #loadingScreen #bar2 {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 20px solid transparent;
+        border-top: 20px solid rgba(200, 170, 100, 0.8);
+        transform: rotate(20deg);
+        animation: rotate2 1.25s 0.25s infinite alternate linear;
+    }
+
+@keyframes rotate1 {
+    0% {
+        transform: rotate(0deg) scale(1)
+    }
+
+    30% {
+        transform: rotate(20deg) scale(1)
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1)
+    }
+
+    70% {
+        transform: rotate(340deg) scale(1)
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1)
+    }
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(0deg) scale(1)
+    }
+
+    15% {
+        transform: rotate(20deg) scale(1)
+    }
+
+    35% {
+        transform: rotate(90deg) scale(1)
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1)
+    }
+
+    75% {
+        transform: rotate(270deg) scale(1)
+    }
+
+    85% {
+        transform: rotate(340deg) scale(1)
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1)
+    }
+}
